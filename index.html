@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" Cilas Icecream - Heladería artesanal">
+    <title>Cila´s Icecream | Heladería</title>
+    <link rel="icon" type="image/png" href="img/logo1.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+ <!-- ================= HEADER ================= -->
+<header class="header">
+    <nav class="navbar">
+
+        <!-- Menú izquierdo -->
+        <ul class="nav-menu nav-left" id="navMenu">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sabores">Sabores</a></li>
+        </ul>
+
+        <!-- LOGO CENTRADO -->
+        <a href="#inicio" class="logo">
+            <img src="img/logo.png"">
+        </a>
+
+        <!-- Menú derecho -->
+        <ul class="nav-menu nav-right">
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+
+        <!-- Carrito -->
+        <button class="cart-button" id="cartButton">
+            🛒
+            <span id="cartCount">0</span>
+        </button>
+
+        <!-- Menú móvil -->
+        <button class="menu-toggle" id="menuToggle">
+            ☰
+        </button>
+
+    </nav>
+</header>
+
+
+    <!-- ================= HERO ================= -->
+    <main>
+
+        <section class="hero" id="inicio">
+
+            <div class="hero-content">
+
+                <p class="small-title"></p>
+
+                <h1>
+                    Un momento dulce
+                    <span><b>para ti.</b></span>
+                </h1>
+
+                <p class="hero-text">
+                    Descubre nuestros deliciosos helados artesanales,
+                    preparados con ingredientes seleccionados y mucho amor.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#sabores" class="btn primary">
+                        Ver sabores
+                    </a>
+
+                    <a href="#nosotros" class="btn secondary">
+                        Conócenos
+                    </a>
+                </div>
+
+        </section>
+
+
+
+
+ <!-- ================= PRODUCTOS ================= -->
+        <section class="products-section" id="sabores">
+
+            <div class="section-header">
+
+                <p class="small-title">NUESTRO MENÚ</p>
+
+                <h2>Sabores que te harán sonreír</h2>
+
+                <p>
+                    Elige tu favorito y disfruta de un momento delicioso.
+                </p>
+
+            </div>
+
+
+            <div class="products-grid">
+
+
+<!-- Producto 1 -->
+<article class="product-card">
+
+    <div class="product-image strawberry">
+        <img src="img/cilasespecial.jpeg" alt="Cila´s Special de Fresa">
+    </div>
+
+    <div class="product-info">
+
+        <span class="product-category">
+            ESPECIAL
+        </span>
+
+        <h3>Cila´s Special</h3>
+
+        <p>
+            Helado cremoso de fresa con pequeños trozos
+            de fruta natural.
+        </p>
+
+        <!-- TAMAÑOS -->
+        <div class="sundae-sizes">
+
+            <button
+                class="sundae-option"
+                data-name="Cila´s Special de Fresa 10 oz"
+                data-price="115">
+                <span>10 oz</span>
+                <strong>L 115</strong>
+            </button>
+
+            <button
+                class="sundae-option"
+                data-name="Cila´s Special de Fresa 14 oz"
+                data-price="150">
+                <span>14 oz</span>
+                <strong>L 150</strong>
+            </button>
+
+        </div>
+
+    </div>
+
+</article>
+
+
+<!-- Producto 2 -->
+<article class="product-card">
+
+    <div class="product-image chocolate">
+        <img src="img/cilasespecialbrownie.jpeg" alt="Cila´s Special Brownie">
+    </div>
+
+    <div class="product-info">
+
+        <span class="product-category">
+            ESPECIAL
+        </span>
+
+        <h3>Cila´s Special</h3>
+
+        <p>
+            Helado cremoso de chocolate con deliciosos
+            trozos de brownie.
+        </p>
+
+        <!-- TAMAÑOS -->
+        <div class="sundae-sizes">
+
+            <button
+                class="sundae-option"
+                data-name="Cila´s Special Brownie 10 oz"
+                data-price="115">
+                <span>10 oz</span>
+                <strong>L 115</strong>
+            </button>
+
+            <button
+                class="sundae-option"
+                data-name="Cila´s Special Brownie 14 oz"
+                data-price="150">
+                <span>14 oz</span>
+                <strong>L 150</strong>
+            </button>
+
+        </div>
+
+    </div>
+
+</article>
+
+
+
+
+
+  <!-- Producto 3 -->
+                <article class="product-card">
+
+                    <div class="product-image pistachio">
+                        <img src="img/bananasplit.jpeg" alt="Descripción de la imagen">
+                    </div>
+
+                    <div class="product-info">
+
+                        <span class="product-category">
+                            CLÁSICO
+                        </span>
+
+                        <h3>Banana Split</h3>
+
+                        <p>
+                          Deliciosa combinación de banana, cremoso helado y dulces toppings.
+
+                        <div class="product-bottom">
+
+                            <strong>L 165</strong>
+
+                            <button
+                                class="add-cart"
+                                data-name="Banana Split"
+                                data-price="165">
+                                +
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Producto 4 -->
+                <article class="product-card">
+
+                    <div class="product-image mango">
+                        <img src="img/mateadaoreoo.jpeg" alt="Descripción de la imagen">
+                    </div>
+
+                    <div class="product-info">
+
+                        <span class="product-category">
+                            CLÁSICO
+                        </span>
+
+                        <h3>Malteada de Galleta Oreo</h3>
+
+                        <p>
+                        Cremosa con el irresistible sabor de Oreo.
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <strong>L 125</strong>
+
+                            <button
+                                class="add-cart"
+                                data-name="Malteada de Oreo"
+                                data-price="125">
+                                +
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Producto 5 -->
+                <article class="product-card">
+
+                    <div class="product-image pistachio">
+                        <img src="img/mateadachocolate.jpeg" alt="Descripción de la imagen">
+                    </div>
+
+                    <div class="product-info">
+
+                        <span class="product-category">
+                            CLÁSICO
+                        </span>
+
+                        <h3>Malteada de Chocolate</h3>
+
+                        <p>
+                            Cremosa malteada de chocolate con un sabor intenso e irresistible.
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <strong>L 125</strong>
+
+                            <button
+                                class="add-cart"
+                                data-name="Malteada de Chocolate"
+                                data-price="125">
+                                +
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+              <!-- Producto 6 -->
+                <article class="product-card">
+
+                    <div class="product-image pistachio">
+                        <img src="img/malteadavainilla.jpeg" alt="Descripción de la imagen">
+                    </div>
+
+                    <div class="product-info">
+
+                        <span class="product-category">
+                            CLÁSICO
+                        </span>
+
+                        <h3>Malteada de Vainilla</h3>
+
+                        <p>
+                            Una mezcla cremosa y delicada con el
+                            característico sabor de la vainilla.
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <strong>L 125</strong>
+
+                            <button
+                                class="add-cart"
+                                data-name="Malteada de Vainilla"
+                                data-price="125">
+                                +
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+  <!-- Producto 7 -->
+<article class="product-card">
+
+    <div class="product-image strawberry">
+        <img src="img/vasitosplit.jpeg" alt="Vasito Split">
+    </div>
+
+    <div class="product-info">
+
+        <span class="product-category">
+            CLÁSICO
+        </span>
+
+        <h3>Vasito Split</h3>
+
+        <p>
+            Cremoso helado de fresa acompañado de platano fresco, bañados en sirope y chispas crujientes, el postre ideal.
+        </p>
+
+        <div class="product-bottom">
+
+            <strong>L 120</strong>
+
+            <button
+                class="add-cart"
+                data-name="Vasito Split"
+                data-price="120">
+                +
+            </button>
+
+        </div>
+
+    </div>
+
+</article>
+
+
+               
+
+<!-- Producto 8 -->
+<article class="product-card">
+
+    <div class="product-image vanilla">
+        <img src="img/sundaevainilla.jpeg" alt="Sundae de Vainilla">
+    </div>
+
+    <div class="product-info">
+
+        <span class="product-category">
+            CLÁSICO
+        </span>
+
+        <h3>Sundae de Vainilla</h3>
+
+        <p>
+            Suave y cremoso para los amantes de los sabores intensos.
+        </p>
+
+
+<!-- TAMAÑOS DEL SUNDAE -->
+<div class="sundae-sizes">
+
+    <button
+        class="sundae-option"
+        data-name="Sundae de Vainilla 6 oz"
+        data-price="65">
+        <span>6 oz</span>
+        <strong>L 65</strong>
+    </button>
+
+    <button
+        class="sundae-option"
+        data-name="Sundae de Vainilla 8 oz"
+        data-price="85">
+        <span>8 oz</span>
+        <strong>L 85</strong>
+    </button>
+
+</div>
+
+<!-- TOPPINGS -->
+<div class="topping-selector">
+
+    <span class="topping-title">
+        Toppings extra
+    </span>
+
+    <div class="topping-controls">
+
+        <button
+            type="button"
+            class="topping-minus">
+            −
+        </button>
+
+        <span class="topping-quantity">
+            0
+        </span>
+
+        <button
+            type="button"
+            class="topping-plus">
+            +
+        </button>
+
+    </div>
+
+    <strong class="topping-price">
+        L 15 c/u
+    </strong>
+
+</div>
+</article>
+
+
+<!-- Producto 9 -->
+<article class="product-card">
+
+    <div class="product-image chocolate">
+        <img src="img/mochaccino.jpeg" alt="Mochaccino">
+    </div>
+
+    <div class="product-info">
+
+        <span class="product-category">
+            CHOCOLATE
+        </span>
+
+        <h3>Mochaccino</h3>
+
+        <p>
+            Rico helado de café y suave toque de chocolate, servido en vasito y decorado con crema y sirope
+        </p>
+
+        <div class="product-bottom">
+
+            <strong>L 80</strong>
+
+            <button
+                class="add-cart"
+                data-name="Mochaccino"
+                data-price="80">
+                +
+            </button>
+
+        </div>
+
+    </div>
+
+</article>
+
+
+
+
+<!-- Producto 10 -->
+<article class="product-card">
+
+    <div class="product-image chocolate">
+        <img src="img/sundaechocolate.jpeg" alt="Sundae de Chocolate">
+    </div>
+
+    <div class="product-info">
+
+        <span class="product-category">
+            CLÁSICO
+        </span>
+
+        <h3>Sundae de Chocolate</h3>
+
+        <p>
+            Con intenso sabor a chocolate para los verdaderos amantes del cacao.
+        </p>
+
+
+<!-- TAMAÑOS DEL SUNDAE -->
+<div class="sundae-sizes">
+
+    <button
+        class="sundae-option"
+        data-name="Sundae de Chocolate 6 oz"
+        data-price="70">
+        <span>6 oz</span>
+        <strong>L 70</strong>
+    </button>
+
+    <button
+        class="sundae-option"
+        data-name="Sundae de Chocolate 8 oz"
+        data-price="90">
+        <span>8 oz</span>
+        <strong>L 90</strong>
+    </button>
+
+</div>
+
+<!-- TOPPINGS -->
+<div class="topping-selector">
+
+    <span class="topping-title">
+        Toppings extra
+    </span>
+
+    <div class="topping-controls">
+
+        <button
+            type="button"
+            class="topping-minus">
+            −
+        </button>
+
+        <span class="topping-quantity">
+            0
+        </span>
+
+        <button
+            type="button"
+            class="topping-plus">
+            +
+        </button>
+
+    </div>
+
+    <strong class="topping-price">
+        L 15 c/u
+    </strong>
+
+</div>
+</article>
+
+
+<!-- Producto 11 -->
+<article class="product-card">
+
+    <div class="product-image vanilla">
+        <img src="img/sundaechocolate.jpeg" alt="Sundae Mixto">
+    </div>
+
+    <div class="product-info">
+
+        <span class="product-category">
+            CLÁSICO
+        </span>
+
+        <h3>Sundae Mixto</h3>
+
+        <p>
+            Un delicioso postre helado que combina dos sabores de helado.
+        </p>
+
+<!-- TAMAÑOS DEL SUNDAE -->
+<div class="sundae-sizes">
+
+    <button
+        class="sundae-option"
+        data-name="Sundae Mixto 6 oz"
+        data-price="70">
+        <span>6 oz</span>
+        <strong>L 70</strong>
+    </button>
+
+    <button
+        class="sundae-option"
+        data-name="Sundae Mixto 8 oz"
+        data-price="90">
+        <span>8 oz</span>
+        <strong>L 90</strong>
+    </button>
+
+</div>
+
+<!-- TOPPINGS -->
+<div class="topping-selector">
+
+    <span class="topping-title">
+        Toppings extra
+    </span>
+
+    <div class="topping-controls">
+
+        <button
+            type="button"
+            class="topping-minus">
+            −
+        </button>
+
+        <span class="topping-quantity">
+            0
+        </span>
+
+        <button
+            type="button"
+            class="topping-plus">
+            +
+        </button>
+
+    </div>
+
+    <strong class="topping-price">
+        L 15 c/u
+    </strong>
+
+</div>
+
+</article>
+
+
+
+<!-- Producto 12 -->
+<article class="product-card">
+
+    <div class="product-image mango">
+        <img src="img/gchocolate.png" alt="Granita de Chocolate">
+    </div>
+
+    <div class="product-info">
+
+        <span class="product-category">
+            CLÁSICO
+        </span>
+
+        <h3>Granita de Chocolate</h3>
+
+        <p>
+            Cholate intenso, para refrescar tu día.
+        </p>
+
+        <div class="product-bottom">
+
+            <strong>L 60</strong>
+
+            <button
+                class="add-cart"
+                data-name="Granita de Chocolate"
+                data-price="60">
+                +
+            </button>
+
+        </div>
+
+    </div>
+
+</article>
+
+
+<!-- Producto 13 -->
+<article class="product-card">
+
+    <div class="product-image vanilla">
+        <img src="img/gfresa.jpeg" alt="Granita de Fresa">
+    </div>
+
+    <div class="product-info">
+
+        <span class="product-category">
+            CLÁSICO
+        </span>
+
+        <h3>Granita de Fresa</h3>
+
+        <p>
+            Refrescante granizo de fresa natural con un toque dulce, perfecto para combatir el calor y refrescar tu día.
+        </p>
+
+        <div class="product-bottom">
+
+            <strong>L 55</strong>
+
+            <button
+                class="add-cart"
+                data-name="Granita de Fresa"
+                data-price="55">
+                +
+            </button>
+
+        </div>
+
+    </div>
+
+</article>
+
+
+<!-- Producto 14 -->
+<article class="product-card">
+
+    <div class="product-image strawberry">
+        <img src="img/hchocolate.jpeg" alt="Copa de Fresa">
+    </div>
+
+    <div class="product-info">
+
+        <span class="product-category">
+            CLÁSICO
+        </span>
+
+        <h3>Cono de Chocolate</h3>
+
+        <p>
+            Intenso helado de puro chocolate servido en crujiente cono, el placer clásico definitivo.
+        </p>
+
+        <div class="product-bottom">
+
+            <strong>L 35</strong>
+
+            <button
+                class="add-cart"
+                data-name="Cono de Chocolate"
+                data-price="35">
+                +
+            </button>
+
+        </div>
+
+<label class="topping-option">
+    <input type="checkbox" class="extra-topping">
+    <span>+ Topping extra</span>
+    <strong>L 10</strong>
+
+</label>
+    </div>
+
+</article>
+
+
+<!-- Producto 15 -->
+<article class="product-card">
+
+    <div class="product-image chocolate">
+        <img src="img/hmixto.jpeg" alt="Copa de Chocolate">
+    </div>
+
+    <div class="product-info">
+
+        <span class="product-category">
+            CLÁSICO
+        </span>
+
+        <h3>Cono Mixto</h3>
+
+        <p>
+            Helado cremoso de vainilla y chocolate en un crujiente cono, lo mejor de ambos mundos.
+        </p>
+
+        <div class="product-bottom">
+
+            <strong>L 35</strong>
+
+            <button
+                class="add-cart"
+                data-name="Cono Mixto"
+                data-price="35">
+                +
+            </button>
+
+        </div>
+
+     <label class="topping-option">
+    <input type="checkbox" class="extra-topping">
+    <span>+ Topping extra</span>
+    <strong>L 10</strong>
+    
+    </div>
+
+</article>
+
+
+<!-- Producto 16 -->
+<article class="product-card">
+
+    <div class="product-image vanilla">
+        <img src="img/hvainilla.jpeg" alt="Cono de Vainilla">
+    </div>
+
+    <div class="product-info">
+
+        <span class="product-category">
+            CLÁSICO
+        </span>
+
+        <h3>Cono de Vainilla</h3>
+
+        <p>
+            Suave y cremoso helado de vainilla servido en
+            un delicioso cono crujiente.
+        </p>
+
+        <div class="product-bottom">
+
+            <strong>L 30</strong>
+
+            <button
+                class="add-cart"
+                data-name="Cono de Vainilla"
+                data-price="30">
+                +
+            </button>
+
+        </div>
+    <label class="topping-option">
+    <input type="checkbox" class="extra-topping">
+    <span>+ Topping extra</span>
+    <strong>L 10</strong>
+    
+    </div>
+
+</article>
+
+                
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= NOSOTROS ================= -->
+        <section class="about" id="nosotros">
+
+            <div class="about-image">
+                <img src="img/local1.jpg" alt="Helado artesanal">
+            </div>
+
+            <div class="about-content">
+
+                <p class="small-title">SOBRE NOSOTROS</p>
+
+                <h2>
+                    Creamos momentos
+                    <span>Dulces.</span>
+                </h2>
+
+                <p>
+                    En <strong>Cila's Icecream</strong> creemos que un helado puede convertir
+                    cualquier momento en algo especial.
+                </p>
+
+                <p>
+                    Elaboramos nuestros productos utilizando ingredientes
+                    cuidadosamente seleccionados para ofrecer una experiencia
+                    deliciosa y memorable.
+                </p>
+
+                <div class="about-stats">
+
+                    <div>
+                        <strong>+15</strong>
+                        <span>Sabores</span>
+                    </div>
+
+                    <div>
+                        <strong>100%</strong>
+                        <span>Artesanal</span>
+                    </div>
+
+                    <div>
+                        <strong>5★</strong>
+                        <span>Calidad</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+<!-- ================= FOTOGALERÍA ================= -->
+<section class="gallery" id="galeria">
+
+    <div class="gallery-header">
+        <p class="small-title">NUESTRA GALERÍA</p>
+        <h2>Momentos <span>Dulces.</span></h2>
+        <p>
+            Conoce nuestro espacio y disfruta un vistazo de la experiencia
+            que tenemos preparada para ti.
+        </p>
+    </div>
+
+    <div class="gallery-slider">
+
+        <button class="gallery-btn prev" id="prevBtn">‹</button>
+
+        <div class="gallery-image-container">
+            <img id="galleryImage" src="img/localdentro.jpeg" alt="Cila's Icecream">
+        </div>
+
+        <button class="gallery-btn next" id="nextBtn">›</button>
+
+    </div>
+
+    <div class="gallery-dots" id="galleryDots"></div>
+
+</section>
+
+
+
+        <!-- ================= CONTACTO ================= -->
+        <section class="contact" id="contacto">
+
+            <div class="section-header">
+
+                <p class="small-title">
+                    VISÍTANOS
+                </p>
+
+                <h2>
+                    Queremos conocerte
+                </h2>
+
+                <p>
+                    Ven a disfrutar de tu helado favorito.
+                </p>
+
+            </div>
+
+
+            <div class="contact-grid">
+
+                <div class="contact-card">
+                    <span>📍</span>
+                    <h3>Ubicación</h3>
+                    <p>Morazán Yoro, Honduras</p>
+                </div>
+
+                <div class="contact-card">
+                    <span>📞</span>
+                    <h3>Teléfono</h3>
+                    <p>+504 9855-9682</p>
+                </div>
+
+                <div class="contact-card">
+                    <span>⏰</span>
+                    <h3>Horario</h3>
+                    <p>Lun - Sab | 12:00 PM - 8:00 PM</p>
+                    <p>Domingo | 1:00 PM - 8:00 PM</p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+
+        <div class="footer-logo">
+            <img src="img/logo.png" alt="Cilas IceCream" width="auto" height="80"> 
+        </div>
+
+        <p>
+            Un momento dulce para ti.
+        </p>
+
+        <div class="socials">
+            <a href="https://www.instagram.com/cilas_icecream?igsi=eGJ0Y254bG9jaWFs">Instagram</a>
+            <a href="https://www.tiktok.com/@cilas_icecream?_r=1&_t=ZS-99C1sdjGXH3">TikTok</a>
+        </div>
+
+        <p class="copyright">
+            © 2026 Cila's Icecream. Todos los derechos reservados.
+        </p>
+
+    </footer>
+
+
+    <!-- ================= CARRITO ================= -->
+    <div class="cart-overlay" id="cartOverlay">
+
+        <div class="cart">
+
+            <button class="close-cart" id="closeCart">
+                ×
+            </button>
+
+            <h2>Tu pedido 🛒</h2>
+
+            <div id="cartItems">
+                <p class="empty-cart">
+                    Tu carrito está vacío.
+                </p>
+            </div>
+
+            <div class="cart-total">
+
+                <span>Total</span>
+
+                <strong>
+                    L <span id="cartTotal">0</span>
+                </strong>
+
+            </div>
+
+            <button class="checkout" id="checkout">
+                Realizar pedido
+            </button>
+
+        </div>
+
+    </div>
+
+
+   
+
+<!-- ================= REDES SOCIALES FLOTANTES ================= -->
+
+<div class="social-floating">
+
+<!-- Instagram -->
+<a href="https://www.instagram.com/cilas_icecream?igsi=eGJ0Y254bG9jaWFs" 
+   target="_blank" 
+   class="social-button instagram"
+   aria-label="Instagram">
+
+   <img src="img/Instagramicon.png" alt="Instagram">
+    <span></span>
+</a>
+
+<!-- TikTok -->
+ <a href="https://www.tiktok.com/@cilas_icecream?_r=1&_t=ZS-99C1sdjGXH3" 
+   target="_blank" 
+   class="social-button tiktok"
+   aria-label="TikTok">
+    <img src="img/tiktok.png" alt="TikTok">
+     <span></span>
+    
+   
+</a>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
