@@ -19,6 +19,229 @@
     --body-font: "DM Sans", sans-serif;
 }
 
+/* ================= UBICACIÓN ================= */
+
+.ubicacion {
+    width: 100%;
+    padding: 100px 25px;
+    background: var(--pink-soft);
+}
+
+.ubicacion-contenido {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    align-items: center;
+    gap: 70px;
+}
+
+
+/* ================= TEXTO ================= */
+
+.ubicacion-texto {
+    padding: 10px;
+}
+
+.ubicacion-texto .subtitulo {
+    display: inline-block;
+
+    font-family: var(--body-font);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+
+    color: var(--pink-dark);
+
+    margin-bottom: 12px;
+}
+
+.ubicacion-texto h2 {
+    font-family: var(--title-font);
+    font-size: clamp(35px, 5vw, 52px);
+    line-height: 1.15;
+
+    color: var(--dark);
+
+    margin-bottom: 15px;
+}
+
+.ubicacion-texto p {
+    font-family: var(--body-font);
+    color: var(--gray);
+
+    font-size: 15px;
+    line-height: 1.8;
+
+    margin-bottom: 25px;
+}
+
+
+/* ================= BOTÓN ================= */
+
+.btn-mapa {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 50px;
+    padding: 0 28px;
+
+    background: var(--pink);
+    color: var(--white);
+
+    font-family: var(--body-font);
+    font-size: 14px;
+    font-weight: 700;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    box-shadow: 0 8px 20px rgba(91, 45, 59, 0.12);
+
+    transition: 0.3s;
+}
+
+.btn-mapa:hover {
+    background: var(--pink-dark);
+    color: var(--white);
+
+    transform: translateY(-3px);
+}
+
+
+/* ================= MAPA ================= */
+
+.mapa {
+    width: 100%;
+    height: 430px;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    background: var(--pink-light);
+
+    box-shadow: var(--shadow);
+}
+
+.mapa iframe {
+    width: 100%;
+    height: 100%;
+
+    border: 0;
+    display: block;
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 900px) {
+
+    .ubicacion {
+        padding: 80px 25px;
+    }
+
+    .ubicacion-contenido {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .ubicacion-texto {
+        text-align: center;
+    }
+
+    .mapa {
+        height: 380px;
+    }
+
+
+
+/* ================= CELULAR ================= */
+
+@media (max-width: 700px) {
+
+    .ubicacion {
+        padding: 70px 20px;
+    }
+
+    .ubicacion-contenido {
+        gap: 30px;
+    }
+
+    .ubicacion-texto {
+        padding: 0;
+    }
+
+    .ubicacion-texto .subtitulo {
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+
+    .ubicacion-texto h2 {
+        font-size: 36px;
+    }
+
+    .ubicacion-texto p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .btn-mapa {
+        min-height: 46px;
+        padding: 0 24px;
+
+        font-size: 13px;
+    }
+
+    .mapa {
+        height: 300px;
+        border-radius: 18px;
+    }
+}
+
+
+/* ================= CELULAR PEQUEÑO ================= */
+
+@media (max-width: 400px) {
+
+    .ubicacion {
+        padding: 60px 18px;
+    }
+
+    .ubicacion-texto h2 {
+        font-size: 32px;
+    }
+
+    .mapa {
+        height: 270px;
+    }
+}
+
+    .ubicacion {
+        padding: 50px 20px;
+    }
+
+    .ubicacion-texto h2 {
+        font-size: 32px;
+    }
+
+    .ubicacion-texto p {
+        font-size: 15px;
+    }
+
+    .mapa {
+        height: 280px;
+        border-radius: 15px;
+    }
+
+    .btn-mapa {
+        padding: 10px 22px;
+    }
+}
+
 img[src="img/bananasplit.jpeg"] {
     object-fit: cover;
     object-position: center 65%;
@@ -1579,4 +1802,5 @@ a:hover {
     height: 26px;
     font-size: 16px;
 }
+
 
